@@ -15,7 +15,7 @@ app : $(OBJ)assign.o
 
 $(OBJ)assign.o : $(SRC)assign.cpp
 	$(CC) $(CPPFLAGS) $(SRC)assign.cpp -I $(INCLUDE)
-	mv assign.o $(OBJ)
+	mv *.o $(OBJ)/
 
 clean : 
 	rm -f a.out app *.o
